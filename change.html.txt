@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kellam Dating</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up for Kellam Dating</h2>
+        <form id="signup-form">
+            <input type="email" id="email" placeholder="Enter your @vbstudents.com email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <div class="profile-container hidden">
+        <h2>Create Your Profile</h2>
+        <form id="profile-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="bio" placeholder="Write a short bio about yourself"></textarea>
+            <input type="text" id="clubs" placeholder="Your Clubs (comma separated)">
+            <input type="text" id="interests" placeholder="Your Interests (comma separated)">
+            <input type="file" id="profile-pic" accept="image/*">
+            <button type="submit">Save Profile</button>
+        </form>
+    </div>
+
+    <div class="swipe-container hidden">
+        <h2>Find Your Match</h2>
+        <div class="profile-card">
+            <img id="profile-pic-display" src="" alt="Profile Picture">
+            <h3 id="profile-name"></h3>
+            <p id="profile-bio"></p>
+            <p><strong>Clubs:</strong> <span id="profile-clubs"></span></p>
+            <p><strong>Interests:</strong> <span id="profile-interests"></span></p>
+            <button id="like">❤️ Like</button>
+            <button id="dislike">❌ Dislike</button>
+        </div>
+    </div>
+</body>
+</html>
